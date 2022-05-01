@@ -7,15 +7,13 @@
 
 ## Carpetas
 
-1. *requierments*: Contiene un archivo **.txt** donde se puede encontrar los paquetes de Python necesarios (normalmente no instalados por defecto) que son necesarios para el proyecto. Igualmente dicha información se da en un archivo **.bat** con el fin de poder realizar una rapida ejecusión en *Windows*.
+1. *data*: Contiene un archivo **.json** con la información utilizada para hacer *fit* al modelo. Dicha información es la misma que se pasa en *Postman*.
 
-2. *data*: Contiene un archivo **.json** con la información utilizada para hacer *fit* al modelo. Dicha información es la misma que se pasa en *Postman*.
+2. *postman*: Contiene dos archivos **.json**. Uno con las pruebas de *train* y *predict* en localhost y otro desplegado en Heroku. 
 
-3. *postman*: Contiene dos archivos **.json**. Uno con las pruebas de *train* y *predict* en localhost y otro desplegado en Heroku. 
+3. *assests*: Si bien puede estar vacio, contiene el modelo PipeLine guardado como **.joblib**.
 
-4. *assests*: Si bien puede estar vacio, contiene el modelo PipeLine guardado como **.joblib**.
-
-5. *results*: Contiene el **.ppt** y el **.pdf** de los resultados de los escenarios.
+4. *results*: Contiene el **.ppt** y el **.pdf** de los resultados de los escenarios.
 
 ## Archivos
 
@@ -24,6 +22,7 @@ Todos los archivos explican su funcionamiento internamente por medio de su respe
 *   *DataModel.py*: Incluye los modelos usados para el *train* y *predict*.
 *   *PredictionModel.py*: Incluye la implementación del **PipeLine** y sus debidos metodos.
 *   *main.py*: Incliye la ejecusión del **API** que permite realizar las pruebas necesarias por medio de la aplicación de **POSTMAN**: https://www.postman.com/ 
+*   *requierments.txt*: Contiene los paquetes de Python necesarios (normalmente no instalados por defecto) que son necesarios para el proyecto.
 
 ## Ejecutar
 
@@ -49,6 +48,11 @@ Para correr las pruebas de manera local se debe usar cualquiera de los siguiente
 
 *   *Train*:http://127.0.0.1:8000/train
 *   *Predict*: http://127.0.0.1:8000/predict
+
+Para correr las pruebas desplegas en el servidor de Heroku se debe usar cualquiera de los siguientes links dependiendo de la necesidad:
+
+*   *Train*: https://lpipeline.herokuapp.com/train
+*   *Predict*: https://lpipeline.herokuapp.com/predict
 
 Cada uno de dichos links requiere un archivo **json** pasado como **raw** en **body** por medio de Postamn bajo la siguiente estructura: 
 
