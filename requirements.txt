@@ -1,3 +1,6 @@
 fastapi
+uvicorn
 gunicorn
 sklearn
+uvloop
+httptools
