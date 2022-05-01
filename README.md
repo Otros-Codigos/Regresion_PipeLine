@@ -15,6 +15,8 @@
 
 4. *assests*: Si bien puede estar vacio, contiene el modelo PipeLine guardado como **.joblib**.
 
+5. *results*: Contiene el **.ppt** y el **.pdf** de los resultados de los escenarios.
+
 ## Archivos
 
 Todos los archivos explican su funcionamiento internamente por medio de su respectiva documentación:
@@ -132,7 +134,7 @@ Para predecir se pasan las variables explicativas X y nada más. Se debe aclarar
 
 ## Escenarios 
 
-Los resultados de los escenarios se encuentran en el **.pdf** en la carpeta **data**, así como se suministran las colecciones ejecutables donde se puede revisar lo dicho. En total se tienen 5 pruebas de predict, y 1 de train.
+Los resultados de los escenarios se encuentran en el **.pdf** en la carpeta **results**, así como se suministran las colecciones ejecutables donde se puede revisar lo dicho. En total se tienen 5 pruebas de predict, y 1 de train.
 
 0. *Train*: Carga una tabla de datos y devuelve la métrica de R^2.
 1. *Predict*: Prueba y valor lógico correctos.
