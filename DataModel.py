@@ -1,9 +1,18 @@
+"""
+    Santiago Bobadilla
+    Juan José Beltrán
+
+    MODELOS
+"""
+
+# librerias
 from pydantic import BaseModel
 from typing import List
 
+# Modelo de las variables explicativas X
 class DataModel(BaseModel):
 
-# Estas varibles permiten que la librería pydantic haga el parseo entre el Json recibido y el modelo declarado.
+    # Estas varibles permiten que la librería pydantic haga el parseo entre el Json recibido y el modelo declarado.
     adult_mortality: float
     infant_deaths: float
     alcohol: float
@@ -23,7 +32,7 @@ class DataModel(BaseModel):
     income_composition_of_resources	: float
     schooling: float
 
-#Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
+    #Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
     def columns(self):
         return ["Adult Mortality", "infant deaths", "Alcohol","percentage expenditure","Hepatitis B", "Measles", "BMI",
                 "under-five deaths", "Polio", "Total expenditure", "Diphtheria", "HIV/AIDS", "DGP", "Population",
@@ -32,8 +41,10 @@ class DataModel(BaseModel):
 
 # ----------------------------------------------------------------------------------------------------------------------------
 
+# Modelo de las variables explicativas X y la variable de respuesta Y
 class DataModelComplete(BaseModel):
 
+    # Estas varibles permiten que la librería pydantic haga el parseo entre el Json recibido y el modelo declarado.
     life_expentancy: float
     adult_mortality: float
     infant_deaths: float
@@ -54,10 +65,12 @@ class DataModelComplete(BaseModel):
     income_composition_of_resources	: float
     schooling: float
 
+#Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
 def columnsAll():
     return ["Life expectancy", "Adult Mortality", "infant deaths", "Alcohol","percentage expenditure","Hepatitis B", "Measles", "BMI",
                 "under-five deaths", "Polio", "Total expenditure", "Diphtheria", "HIV/AIDS", "DGP", "Population",
                 "thinness 10-19 years", "thinness 5-9 years", "Income composition of resources", "Schooling"]
 
+# Lista de registros X y Y
 class DataList(BaseModel):
     data: List[DataModelComplete]

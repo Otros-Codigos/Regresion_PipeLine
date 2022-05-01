@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "a493ffd2-23ec-4dcc-baa1-1d2f20c6e557",
-		"name": "BI",
+		"_postman_id": "0c7248c3-ba56-493b-9eda-e7b87c72177a",
+		"name": "tests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -37,13 +37,137 @@
 			"response": []
 		},
 		{
-			"name": "Predict",
+			"name": "Predict 1",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"adult_mortality\": 263,\r\n    \"infant_deaths\": 62,\r\n    \"alcohol\": 0.01,\r\n    \"percentage_expenditure\": 71.27962362,\r\n    \"hepatitis_B\": 65,\r\n    \"measles\": 1154,\r\n    \"bmi\": 19.1,\r\n    \"under_five_deaths\": 83,\r\n    \"polio\": 6.0,\r\n    \"total_expenditure\": 8.16,\r\n    \"diphtheria\": 65.0,\r\n    \"hiv_aids\": 0.1,\r\n    \"gdp\": 584.25921,\r\n    \"population\": 33736494.0,\r\n    \"thinness_10_19_years\": 17.2,\r\n    \"thinness_5_9_years\": 17.3,\r\n    \"income_composition_of_resources\": 0.479,\r\n    \"schooling\": 10.1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adult_mortality\": 263,\r\n    \"infant_deaths\": 62,\r\n    \"alcohol\": 0.8,\r\n    \"percentage_expenditure\": 71.27962362,\r\n    \"hepatitis_B\": 65,\r\n    \"measles\": 1154,\r\n    \"bmi\": 19.1,\r\n    \"under_five_deaths\": 83,\r\n    \"polio\": 6.0,\r\n    \"total_expenditure\": 8.16,\r\n    \"diphtheria\": 65.0,\r\n    \"hiv_aids\": 0.1,\r\n    \"gdp\": 584.25921,\r\n    \"population\": 33736494.0,\r\n    \"thinness_10_19_years\": 17.2,\r\n    \"thinness_5_9_years\": 17.3,\r\n    \"income_composition_of_resources\": 0.479,\r\n    \"schooling\": 10.1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adult_mortality\": 263,\r\n    \"infant_deaths\": 62,\r\n    \"alcohol\": 0.8,\r\n    \"percentage_expenditure\": 71.27962362,\r\n    \"hepatitis_B\": 65,\r\n    \"measles\": 1154,\r\n    \"bmi\": 19.1,\r\n    \"under_five_deaths\": 83,\r\n    \"polio\": 6.0,\r\n    \"total_expenditure\": 8.16,\r\n    \"diphtheria\": 65.0,\r\n    \"hiv_aids\": 0.1,\r\n    \"gdp\": 584.25921,\r\n    \"population\": 33736494.0,\r\n    \"thinness_10_19_years\": 17.2,\r\n    \"thinness_5_9_years\": 17.3,\r\n    \"income_composition_of_resources\": 0.479,\r\n    \"schooling\": 10.1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adult_mortality\": 263,\r\n    \"infant_deaths\": 62,\r\n    \"alcohol\": 0.8,\r\n    \"percentage_expenditure\": 71.27962362,\r\n    \"hepatitis_B\": 65,\r\n    \"measles\": 1154,\r\n    \"bmi\": 19.1,\r\n    \"under_five_deaths\": 83,\r\n    \"polio\": 6.0,\r\n    \"total_expenditure\": 8.16,\r\n    \"diphtheria\": 65.0,\r\n    \"hiv_aids\": 0.1,\r\n    \"gdp\": 584.25921,\r\n    \"population\": 33736494.0,\r\n    \"thinness_10_19_years\": 17.2,\r\n    \"thinness_5_9_years\": 17.3,\r\n    \"income_composition_of_resources\": 0.479,\r\n    \"schooling\": 10.1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adult_mortality\": 263,\r\n    \"infant_deaths\": 62,\r\n    \"alcohol\": 0.8,\r\n    \"percentage_expenditure\": 71.27962362,\r\n    \"hepatitis_B\": 65,\r\n    \"measles\": 1154,\r\n    \"bmi\": 19.1,\r\n    \"under_five_deaths\": 83,\r\n    \"polio\": 6.0,\r\n    \"total_expenditure\": 8.16,\r\n    \"diphtheria\": 65.0,\r\n    \"hiv_aids\": 0.1,\r\n    \"gdp\": 584.25921,\r\n    \"population\": 33736494.0,\r\n    \"thinness_10_19_years\": 17.2,\r\n    \"thinness_5_9_years\": 17.3,\r\n    \"income_composition_of_resources\": 0.479,\r\n    \"schooling\": 10.1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
