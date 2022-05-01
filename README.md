@@ -1,7 +1,5 @@
-# Regresion_PipeLine
 
-* Santiago Bobadilla - 201820728
-* Juan José Beltrán Ruiz - 201819446
+
 
 ---
 
@@ -13,16 +11,34 @@
 
 3. *postman*: Contiene dos archivos **.json**. Uno con las pruebas de *train* y *predict* en localhost y otro desplegado en Heroku. 
 
-4. *assests*: Si bien puede estar vacio, contiene el modelo PipeLine guardado como **.joblib**
+4. *assests*: Si bien puede estar vacio, contiene el modelo PipeLine guardado como **.joblib**.
 
 ## Archivos
 
-*   DataModel.py
-*   PredictionModel.py
-*   main.py
+Todos los archivos explican su funcionamiento internamente por medio de su respectiva documentación:
+
+*   *DataModel.py*: Incluye los modelos usados para el *train* y *predict*.
+*   *PredictionModel.py*: Incluye la implementación del **PipeLine** y sus debidos metodos.
+*   *main.py*: Incliye la ejecusión del **API** que permite realizar las pruebas necesarias por medio de la aplicación de **POSTMAN**: https://www.postman.com/ 
 
 ## Ejecutar
 
 1. Descargar el repositorio e instalar lo necesario con base en la carpeta: **requierments**.
 
-2. :)
+2. Correr el Main por medio del siguiente comando en **terminal**:
+
+```
+uvicorn main:app --reload
+```
+
+3. Revisar que en consola tenga dos posibles respuestas en texto plano:
+
+```
+PipeLine Creado        or        PipeLine Cargado
+```
+
+4. Correr las pruebas en **POSTMAN**.
+
+### POSTMAN
+
+
